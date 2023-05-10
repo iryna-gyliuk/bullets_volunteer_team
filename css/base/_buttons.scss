@@ -1,0 +1,33 @@
+.button {
+    @extend %font-prim;
+    padding: 15px 25px;
+    font-style: normal;
+    min-width: 220px;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    @extend %transition;
+    &_colored {
+        background: $color-primary;
+        color: $color-light;
+        border: 1px solid $color-primary;
+        &:hover {
+            background: $color-additional;
+            border-color: $color-additional;
+        }
+    }
+}
+
+.btn_big{
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 300px;
+}
+
+

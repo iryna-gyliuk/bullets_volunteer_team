@@ -1,0 +1,17 @@
+%transition {
+    transition: all .3s ease-out;
+}
+
+%font-prim {
+    font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+%font-add {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+%list-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
