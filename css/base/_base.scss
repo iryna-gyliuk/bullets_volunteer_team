@@ -1,0 +1,58 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+}
+
+h1 {
+    @extend %font-add;
+    @include font($height: 4.4rem, $size: 3.5rem, $weight: normal);
+    @include media-mobile {
+        @include font($height: 3.8rem, $size: 2.8rem);
+    }
+}
+
+h2 {
+    @include font($size: 3.4rem, $height: 4.6rem , $weight: normal);
+    @include media-laptop{
+        @include font($height: 3.3rem, $size: 3.0rem , $weight: normal);
+    }
+    @include media-mobile {
+        @include font($height: 3.3rem, $size: 2.4rem , $weight: normal);
+    }
+}
+
+h3 {
+    @include font($size: 2.4rem, $height: 3.4rem, $weight: normal);
+    @include media-mobile {
+        @include font($height: 3.1rem, $size: 2.1rem);
+    }
+}
+
+h4 {
+    @include font($size: 2.2rem, $height: 3.0rem, $weight: 600);
+    @include media-tablet {
+        @include font($height: 3.0rem, $size: 2.0rem);
+    }
+}
+
+h5 {
+    @include font($size: 1.6rem, $height: 2.6rem);
+}
+
+.block-shadowed {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.row {
+    padding: 60px 0;
+}
+.section-colored-light{
+    background-color: $color-background-light;
+}
+.section-colored-bright{
+    background-color: $color-background;
+}

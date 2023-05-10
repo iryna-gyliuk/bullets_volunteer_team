@@ -1,0 +1,79 @@
+.help-block {
+  .layout-2-column {
+    &>* {
+      @include media-laptop {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+.layout-3-column {
+  &>* {
+    @include media-tablet-lg {
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+
+  .today-info,
+  .footer {
+    .layout-2-column>* {
+      flex-basis: 100%;
+    }
+  }
+
+  .site-link-btn {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 610px) {
+  .intro-content {
+    padding: 30px;
+  }
+
+  .btn_big {
+    min-width: auto;
+    font-size: 2.8rem;
+  }
+
+  .help-list_content {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .today-info {
+    .card-body {
+      padding: 30px;
+    }
+
+  }
+
+  .row {
+    padding: 30px 0;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .header__wrapper {
+    display: block;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+  .site-link-btn{
+    width: auto;
+    padding: 15px 12px;
+    font-size: 1.8rem;
+  }
+  .iban-number{
+    font-size: 1.2rem;
+  }
+}
