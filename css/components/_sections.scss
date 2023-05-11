@@ -9,24 +9,27 @@
             .today-info_icon {
                 font-size: 55px;
                 margin-right: 25px;
+
                 @include media-tablet-lg {
                     font-size: 40px;
-                  }
-              
+                }
+
             }
 
             .today-info_text {
                 font-size: 2.2rem;
+
                 @include media-tablet-lg {
                     font-size: 1.8rem;
-                  }
+                }
 
                 strong {
                     display: block;
                     font-size: 2.8rem;
+
                     @include media-tablet-lg {
                         font-size: 2.0rem;
-                      }
+                    }
                 }
             }
 
@@ -47,6 +50,7 @@
 
     }
 }
+
 /*--------------Help ----------------*/
 .help-block {
     .left-column {
@@ -92,21 +96,22 @@
 
 
 /*--------------About us--------------*/
-.about-us-block{
+.about-us-block {
     border-top: 2px solid $color-additional;
     margin-top: 50px;
-    .card-body{
-        .button{
+
+    .card-body {
+        .button {
             display: block;
-            @include media-tablet-lg  {
+
+            @include media-tablet-lg {
                 width: 40%;
                 margin: 0 auto;
             }
         }
     }
-    @include media-tablet-lg  {
+
+    @include media-tablet-lg {
         text-align: center;
     }
 }
-
-
